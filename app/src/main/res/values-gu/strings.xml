@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">સેટિંગ્સ</string>
+    <string name="price">કિંમત</string>
+    <string name="available1">ઉપલબ્ધ છે</string>
+    <string name="app_name">એગ્રી_હબ</string>
+    <string name="upload_and_produce">અપલોડ કરો અને ઉત્પાદન કરો</string>
+    <string name="manage_product">ઉત્પાદન મેનેજ કરો</string>
+    <string name="approval">મંજૂરી</string>
+    <string name="chat">ચેટ</string>
+    <string name="profile">પ્રોફાઇલ</string>
+    <string name="referesh">તાજું કરો</string>
+    <string name="update_profile">પ્રોફાઇલ અપડેટ કરો</string>
+    <string name="update_email">ઇમેઇલ અપડેટ કરો</string>
+    <string name="settings">સેટિંગ્સ</string>
+    <string name="change_password">પાસવર્ડ બદલો</string>
+    <string name="delete_profile">પ્રોફાઇલ કાઢી નાખો</string>
+    <string name="log_out">લોગ આઉટ કરો</string>
+    <string name="login">લૉગિન કરો</string>
+    <string name="email">ઇમેઇલ</string>
+    <string name="password">પાસવર્ડ</string>
+    <string name="forgot_password">પાસવર્ડ ભૂલી ગયા છો?</string>
+    <string name="not_yet_registered">હજુ સુધી નોંધાયેલ નથી?</string>
+    <string name="signup_now">હમણાં સાઇન અપ કરો</string>
+    <string name="register_here">અહીં નોંધણી કરો</string>
+    <string name="full_name">પૂરું નામ*</string>
+    <string name="your_name">તમારું નામ</string>
+    <string name="your_email">તમારું ઈમેલ</string>
+    <string name="Email">ઈમેલ*</string>
+    <string name="phone_number">ફોન નંબર*</string>
+    <string name="enter_your_10_digit_phone_number_91">તમારો 10 અંકનો ફોન નંબર દાખલ કરો(+91)</string>
+    <string name="gender">લિંગ*</string>
+    <string name="female">સ્ત્રી</string>
+    <string name="male">પુરુષ</string>
+    <string name="select_date_of_birth_dd_mm_yyyy">જન્મ તારીખ પસંદ કરો (dd/mm/yyyy)*</string>
+    <string name="select_your_date_of_birth_dd_mm_yyyy">તમારી જન્મ તારીખ પસંદ કરો (dd/mm/yyyy)</string>
+    <string name="Password">પાસવર્ડ*</string>
+    <string name="pwd">પાસવર્ડ</string>
+    <string name="confirm_password">પાસવર્ડ કન્ફર્મ કરો*</string>
+    <string name="cmpwd">પાસવર્ડની પુષ્ટિ કરો</string>
+    <string name="registration">નોંધણી</string>
+    <string name="do_you_have_an_existing_account">શું તમારી પાસે હાલનું એકાઉન્ટ છે?</string>
+    <string name="lgn">લૉગિન કરો</string>
+    <string name="please_enter_the_registered_email_to_get_the_reset_link">રીસેટ લિંક મેળવવા માટે કૃપા કરીને નોંધાયેલ ઇમેઇલ દાખલ કરો</string>
+    <string name="emailf">ઈમેલ*</string>
+    <string name="enter_your_email_here">અહીં તમારો ઈમેલ દાખલ કરો</string>
+    <string name="reset_password">પાસવર્ડ રીસેટ કરો</string>
+    <string name="welcome_to">માં આપનું સ્વાગત છે</string>
+    <string name="agri_hub">એગ્રી_હબ</string>
+    <string name="farmer_login">ખેડૂત લૉગિન</string>
+    <string name="user_login">વપરાશકર્તા લૉગિન</string>
+    <string name="add_to_cart">કાર્ટમાં ઉમેરો</string>
+    <string name="buy_now">હવે ખરીદો</string>
+    <string name="rate_this_product">આ ઉત્પાદનને રેટ કરો</string>
+    <string name="write_a_review">એક સમીક્ષા લખો...</string>
+    <string name="submit">સબમિટ કરો</string>
+    <string name="total_ratings_0">કુલ રેટિંગ્સ: 0</string>
+    <string name="upload_your_profile_pic">તમારો પ્રોફાઇલ ફોટો અપલોડ કરો</string>
+    <string name="choose_form_you_device">તમારા ઉપકરણમાંથી પસંદ કરો</string>
+    <string name="upload">અપલોડ કરો</string>
+    <string name="product_name">ઉત્પાદન નામ</string>
+    <string name="enter_product_price">₹ ઉત્પાદન કિંમત દાખલ કરો</string>
+    <string name="product_price">ઉત્પાદન કિંમત</string>
+    <string name="product_available">ઉત્પાદન ઉપલબ્ધ</string>
+    <string name="enter_available_quantity">ઉપલબ્ધ જથ્થો દાખલ કરો</string>
+    <string name="product_image">ઉત્પાદન છબી</string>
+    <string name="upload1">અપલોડ કરો</string>
+    <string name="no_results_found">કોઈ પરિણામો મળ્યા નથી</string>
+    <string name="edit">સંપાદિત કરો</string>
+    <string name="available">ઉપલબ્ધ છે</string>
+    <string name="productprice">ઉત્પાદન કિંમત</string>
+    <string name="_0_ratings">0 રેટિંગ</string>
+    <string name="rate_now">હવે રેટ કરો</string>
+    <string name="user_name">વપરાશકર્તા નામ</string>
+    <string name="user_review">વપરાશકર્તા સમીક્ષા</string>
+    <string name="product_name1">ઉત્પાદન નામ</string>
+    <string name="_0">(0)</string>
+    <string name="loading">લોડ કરી રહ્યું છે...</string>
+    <string name="select_your_language">તમારી ભાષા પસંદ કરો</string>
+
+    <string-array name="vegitable">
+        <item>આઇટમ પસંદ કરો</item>
+        <item>ફુલકોબી</item>
+        <item>ટમેટાં</item>
+        <item>બટાકા</item>
+        <item>ડુંગળી</item>
+        <item>ગાજર</item>
+        <item>કોબીજ</item>
+        <item>કાકડી</item>
+        <item>ભીંડા</item>
+        <item>ઘઉં</item>
+        <item>સફરજન</item>
+        <item>સંતરો</item>
+        <item>કેળા</item>
+    </string-array>
+
+    <string-array name="country_list">
+        <item>ભારત</item>
+        <item>યુએસએ</item>
+        <item>કેનેડા</item>
+        <item>ઓસ્ટ્રેલિયા</item>
+        <item>યુકે</item>
+    </string-array>
+
+    <string-array name="state_list">
+        <item>ઓડિશા</item>
+        <item>આંધ્ર પ્રદેશ</item>
+        <item>બિહાર</item>
+        <item>દિલ્લી</item>
+        <item>મહારાષ્ટ્ર</item>
+        <item>રાજસ્થાન</item>
+        <item>ઉત્તર પ્રદેશ</item>
+        <item>પશ્ચિમ બંગાળ</item>
+    </string-array>
+
+    <string-array name="number_array">
+        <item>૧</item>  <!-- 1 -->
+        <item>૨</item>  <!-- 2 -->
+        <item>૩</item>  <!-- 3 -->
+        <item>૪</item>  <!-- 4 -->
+        <item>૫</item>  <!-- 5 -->
+        <item>૬</item>  <!-- 6 -->
+        <item>૭</item>  <!-- 7 -->
+        <item>૮</item>  <!-- 8 -->
+        <item>૯</item>  <!-- 9 -->
+        <item>૧૦</item>  <!-- 10 -->
+    </string-array>
+
+    <string-array name="weights">
+        <item>1 કિગ્રા</item>
+        <item>2 કિગ્રા</item>
+        <item>500 ગ્રામ</item>
+        <item>200 ગ્રામ</item>
+        <item>100 ગ્રામ</item>
+    </string-array>
+
+    <string name="give_product_s_details">ઉત્પાદન વિશે વિગતો આપો</string>
+    <string name="description">વર્ણન</string>
+    <string name="enter_description">વર્ણન દાખલ કરો</string>
+    <string name="type">પ્રકાર</string>
+    <string name="yes">હા</string>
+    <string name="no">ના</string>
+    <string name="chemical_used">કેમિકલ વપરાય છે?</string>
+    <string name="how_much_and_which">કેટલું (%) અને કયું?</string>
+    <string name="variants">ચલો</string>
+    <string name="more_details">વધુ વિગતો</string>
+    <string name="net_quantity">નેટ જથ્થો</string>
+    <string name="product_description">ઉત્પાદન વર્ણન</string>
+    <string name="organic">ઓર્ગેનિક</string>
+    <string name="product_id">પ્રોડક્ટ આઈડી</string>
+    <string name="customers_review">ગ્રાહક સમીક્ષાઓ</string>
+    <string name="chemical_details">જે કેમિકલ</string>
+    <string name="share_your_thoughts_to_other_customers">તમારા વિચારો અન્ય ગ્રાહકો સાથે શેર કરો</string>
+    <string name="address">સરનામું</string>
+    <string name="order_summary">ઓર્ડર સારાંશ</string>
+    <string name="payment">ચુકવણી</string>
+    <string name="packOf">પૅક ઑફ</string>
+    <string name="Price">કિંમત</string>
+    <string name="Continue">ચાલુ રાખો</string>
+    <string name="Home">ઘર</string>
+    <string name="orders">ઓર્ડર્સ</string>
+    <string name="cart">કાર્ટ</string>
+    <string name="opps_no_items_founds">અરેરે!કોઈ આઇટમ મળી નથી!</string>
+    <string name="continue_shopping">ખરીદી ચાલુ રાખો</string>
+    <string name="select_variant">વેરિઅન્ટ પસંદ કરો</string>
+    <string name="select_variant_here">અહીં વેરિઅન્ટ પસંદ કરો</string>
+    <string name="variant1">વેરિઅન્ટ1:</string>
+    <string name="variant2">વેરિઅન્ટ2:</string>
+    <string name="variant3">વેરિઅન્ટ3:</string>
+    <string name="variant4">વેરિઅન્ટ4:</string>
+    <string name="variant5">વેરિઅન્ટ5:</string>
+    <string name="weight">(વજન)</string>
+
+</resources>

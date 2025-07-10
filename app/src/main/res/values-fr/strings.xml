@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Paramètres</string>
+    <string name="app_name">Agri_Hub</string>
+    <string name="price">Prix</string>
+    <string name="available1">Disponible</string>
+    <string name="upload_and_produce">Télécharger et produire</string>
+    <string name="manage_product">Gérer le produit</string>
+    <string name="approval">Approbation</string>
+    <string name="chat">Chatte</string>
+    <string name="profile">Profil</string>
+    <string name="referesh">Rafraîchir</string>
+    <string name="update_profile">Mettre à jour le profil</string>
+    <string name="update_email">Mettre à jour l\'e-mail</string>
+    <string name="settings">Paramètres</string>
+    <string name="change_password">Changer le mot de passe</string>
+    <string name="delete_profile">Supprimer le profil</string>
+    <string name="log_out">Se déconnecter</string>
+    <string name="login">SE CONNECTER</string>
+    <string name="email">e-mail</string>
+    <string name="password">mot de passe</string>
+    <string name="forgot_password">Mot de passe oublié?</string>
+    <string name="not_yet_registered">Pas encore inscrit ?</string>
+    <string name="signup_now">Inscrivez-vous maintenant</string>
+    <string name="register_here">Inscrivez-vous ici</string>
+    <string name="full_name">Nom et prénom*</string>
+    <string name="your_name">Votre nom</string>
+    <string name="your_email">Votre e-mail</string>
+    <string name="Email">E-mail*</string>
+    <string name="phone_number">Numéro de téléphone*</string>
+    <string name="enter_your_10_digit_phone_number_91">Entrez votre numéro de téléphone à 10 chiffres (+91)</string>
+    <string name="gender">Genre*</string>
+    <string name="female">Femelle</string>
+    <string name="male">Mâle</string>
+    <string name="select_date_of_birth_dd_mm_yyyy">Sélectionnez la date de naissance (jj/mm/aaaa)*</string>
+    <string name="select_your_date_of_birth_dd_mm_yyyy">Sélectionnez votre date de naissance (jj/mm/aaaa)</string>
+    <string name="Password">Mot de passe*</string>
+    <string name="pwd">Mot de passe</string>
+    <string name="confirm_password">Confirmez le mot de passe*</string>
+    <string name="cmpwd">Confirmez le mot de passe</string>
+    <string name="registration">Inscription</string>
+    <string name="do_you_have_an_existing_account">Avez-vous déjà un compte ?</string>
+    <string name="lgn">Se connecter</string>
+    <string name="please_enter_the_registered_email_to_get_the_reset_link">Veuillez saisir l\'e-mail enregistré pour obtenir le lien de réinitialisation</string>
+    <string name="emailf">E-mail*</string>
+    <string name="enter_your_email_here">Entrez votre email ici</string>
+    <string name="reset_password">Réinitialiser le mot de passe</string>
+    <string name="welcome_to">Bienvenue à</string>
+    <string name="agri_hub">Agri_Hub</string>
+    <string name="farmer_login">Connexion agriculteur</string>
+    <string name="user_login">Connexion utilisateur</string>
+    <string name="add_to_cart">Ajouter au panier</string>
+    <string name="buy_now">Acheter maintenant</string>
+    <string name="rate_this_product">Évaluer ce produit</string>
+    <string name="write_a_review">Écrire un avis...</string>
+    <string name="submit">Soumettre</string>
+    <string name="total_ratings_0">Total des notes : 0</string>
+    <string name="upload_your_profile_pic">Téléchargez votre photo de profil</string>
+    <string name="choose_form_you_device">Choisissez parmi votre appareil</string>
+    <string name="upload">Télécharger</string>
+    <string name="product_name">Nom du produit</string>
+    <string name="enter_product_price">₹ Entrez le prix du produit</string>
+    <string name="product_price">Prix ​​du produit</string>
+    <string name="product_available">Produit disponible</string>
+    <string name="enter_available_quantity">Entrez la quantité disponible</string>
+    <string name="product_image">Image du produit</string>
+    <string name="upload1">Télécharger</string>
+    <string name="no_results_found">Aucun résultat trouvé</string>
+    <string name="edit">Modifier</string>
+    <string name="available">Disponible</string>
+    <string name="productprice">Prix ​​du produit</string>
+    <string name="_0_ratings">0 évaluations</string>
+    <string name="rate_now">Évaluer maintenant</string>
+    <string name="user_name">Nom d\'utilisateur</string>
+    <string name="user_review">Avis des utilisateurs</string>
+    <string name="product_name1">Nom du produit</string>
+    <string name="_0">(0)</string>
+    <string name="loading">Chargement...</string>
+    <string name="select_your_language">Sélectionnez votre langue</string>
+
+    <string-array name="vegitable">
+        <item>Choisir un article</item>
+        <item>Chou-fleur</item>
+        <item>Tomates</item>
+        <item>Pomme de terre</item>
+        <item>Oignons</item>
+        <item>Carottes</item>
+        <item>Chou</item>
+        <item>Concombres</item>
+        <item>Gombos</item>
+        <item>Blé</item>
+        <item>Pommes</item>
+        <item>Oranges</item>
+        <item>Bananes</item>
+    </string-array>
+
+    <string-array name="country_list">
+        <item>Inde</item>
+        <item>États-Unis</item>
+        <item>Canada</item>
+        <item>Australie</item>
+        <item>Royaume-Uni</item>
+    </string-array>
+
+    <string-array name="state_list">
+        <item>Odisha</item>
+        <item>Andhra Pradesh</item>
+        <item>Bihar</item>
+        <item>Delhi</item>
+        <item>Maharashtra</item>
+        <item>Rajasthan</item>
+        <item>Uttar Pradesh</item>
+        <item>Bengale occidental</item>
+    </string-array>
+
+    <string-array name="number_array">
+        <item>Un</item>  <!-- 1 -->
+        <item>Deux</item>  <!-- 2 -->
+        <item>Trois</item>  <!-- 3 -->
+        <item>Quatre</item>  <!-- 4 -->
+        <item>Cinq</item>  <!-- 5 -->
+        <item>Six</item>  <!-- 6 -->
+        <item>Sept</item>  <!-- 7 -->
+        <item>Huit</item>  <!-- 8 -->
+        <item>Neuf</item>  <!-- 9 -->
+        <item>Dix</item>  <!-- 10 -->
+    </string-array>
+
+    <string-array name="weights">
+        <item>1 kg</item>
+        <item>2 kg</item>
+        <item>500 g</item>
+        <item>200 g</item>
+        <item>100 g</item>
+    </string-array>
+
+    <string name="give_product_s_details">Donnez des détails sur le produit</string>
+    <string name="description">Description</string>
+    <string name="enter_description">Entrez la description</string>
+    <string name="type">Taper</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="chemical_used">Produit chimique utilisé ?</string>
+    <string name="how_much_and_which">Combien (%) et lequel ?</string>
+    <string name="variants">Variantes</string>
+    <string name="more_details">Plus de détails</string>
+    <string name="net_quantity">Quantité nette</string>
+    <string name="product_description">Description du produit</string>
+    <string name="organic">Organique</string>
+    <string name="product_id">ID du produit</string>
+    <string name="customers_review">Avis des clients</string>
+    <string name="chemical_details">Quel produit chimique</string>
+    <string name="share_your_thoughts_to_other_customers">Partagez vos idées avec d\'autres clients</string>
+    <string name="address">Adresse</string>
+    <string name="order_summary">Résumé de la commande</string>
+    <string name="payment">Paiement</string>
+    <string name="packOf">PAQUET DE</string>
+    <string name="Price">PRIX</string>
+    <string name="Continue">CONTINUER</string>
+    <string name="Home">Maison</string>
+    <string name="orders">Commandes</string>
+    <string name="cart">Panier</string>
+    <string name="opps_no_items_founds">Oups ! Aucun élément trouvé !</string>
+    <string name="continue_shopping">Continuer vos achats</string>
+    <string name="select_variant">Sélectionner la variante</string>
+    <string name="select_variant_here">Sélectionnez la variante ici</string>
+    <string name="variant1">Variante 1 :</string>
+    <string name="variant2">Variante2 :</string>
+    <string name="variant3">Variante 3 :</string>
+    <string name="variant4">Variante4 :</string>
+    <string name="variant5">Variante5 :</string>
+    <string name="weight">(Poids)</string>
+
+</resources>

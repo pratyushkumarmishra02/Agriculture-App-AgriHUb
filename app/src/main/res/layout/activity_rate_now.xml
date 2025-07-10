@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_alignParentTop="true" />
+
+    <!-- Submit Rating Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rate_this_product"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp" />
+
+    <RatingBar
+        android:id="@+id/user_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:progressTint="@color/orange"
+        android:layout_marginTop="4dp" />
+
+    <EditText
+        android:id="@+id/review_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/write_a_review"
+        android:background="@drawable/roundstyle"
+        android:padding="12dp"
+        android:maxLines="3"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/submit_rating"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_buy_now"
+        app:backgroundTint="@null"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

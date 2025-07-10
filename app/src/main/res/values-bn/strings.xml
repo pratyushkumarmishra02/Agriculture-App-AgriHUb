@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">সেটিংস</string>
+    <string name="app_name">কৃষি_হাব</string>
+    <string name="price">দাম</string>
+    <string name="available1">পাওয়া যায়</string>
+    <string name="upload_and_produce">আপলোড এবং উত্পাদন</string>
+    <string name="manage_product">পণ্য পরিচালনা করুন</string>
+    <string name="approval">অনুমোদন</string>
+    <string name="chat">চ্যাট</string>
+    <string name="profile">প্রোফাইল</string>
+    <string name="referesh">রিফ্রেশ</string>
+    <string name="update_profile">প্রোফাইল আপডেট করুন</string>
+    <string name="update_email">ইমেল আপডেট করুন</string>
+    <string name="settings">সেটিংস</string>
+    <string name="change_password">পাসওয়ার্ড পরিবর্তন করুন</string>
+    <string name="delete_profile">প্রোফাইল মুছুন</string>
+    <string name="log_out">লগ আউট করুন</string>
+    <string name="login">লগইন করুন</string>
+    <string name="email">ইমেইল</string>
+    <string name="password">পাসওয়ার্ড</string>
+    <string name="forgot_password">পাসওয়ার্ড ভুলে গেছেন?</string>
+    <string name="not_yet_registered">এখনো নিবন্ধন করা হয়নি?</string>
+    <string name="signup_now">এখনই সাইন আপ করুন</string>
+    <string name="register_here">এখানে নিবন্ধন করুন</string>
+    <string name="full_name">পুরো নাম*</string>
+    <string name="your_name">আপনার নাম</string>
+    <string name="your_email">আপনার ইমেইল</string>
+    <string name="Email">ইমেইল*</string>
+    <string name="phone_number">ফোন নম্বর*</string>
+    <string name="enter_your_10_digit_phone_number_91">আপনার 10 সংখ্যার ফোন নম্বর লিখুন (+91)</string>
+    <string name="gender">লিঙ্গ*</string>
+    <string name="female">মহিলা</string>
+    <string name="male">পুরুষ</string>
+    <string name="select_date_of_birth_dd_mm_yyyy">জন্ম তারিখ নির্বাচন করুন (dd/mm/yyyy)*</string>
+    <string name="select_your_date_of_birth_dd_mm_yyyy">আপনার জন্ম তারিখ নির্বাচন করুন (dd/mm/yyyy)</string>
+    <string name="Password">পাসওয়ার্ড*</string>
+    <string name="pwd">পাসওয়ার্ড</string>
+    <string name="confirm_password">পাসওয়ার্ড নিশ্চিত করুন*</string>
+    <string name="cmpwd">পাসওয়ার্ড নিশ্চিত করুন</string>
+    <string name="registration">নিবন্ধন</string>
+    <string name="do_you_have_an_existing_account">আপনি একটি বিদ্যমান অ্যাকাউন্ট আছে?</string>
+    <string name="lgn">লগইন করুন</string>
+    <string name="please_enter_the_registered_email_to_get_the_reset_link">রিসেট লিঙ্ক পেতে নিবন্ধিত ইমেল লিখুন</string>
+    <string name="emailf">ইমেইল*</string>
+    <string name="enter_your_email_here">এখানে আপনার ইমেইল লিখুন</string>
+    <string name="reset_password">পাসওয়ার্ড রিসেট করুন</string>
+    <string name="welcome_to">স্বাগতম</string>
+    <string name="agri_hub">কৃষি_হাব</string>
+    <string name="farmer_login">কৃষক লগইন</string>
+    <string name="user_login">ব্যবহারকারী লগইন</string>
+    <string name="add_to_cart">কার্টে যোগ করুন</string>
+    <string name="buy_now">এখনই কিনুন</string>
+    <string name="rate_this_product">এই পণ্য রেট</string>
+    <string name="write_a_review">একটি পর্যালোচনা লিখুন...</string>
+    <string name="submit">জমা দিন</string>
+    <string name="total_ratings_0">মোট রেটিং: 0</string>
+    <string name="upload_your_profile_pic">আপনার প্রোফাইল ছবি আপলোড করুন</string>
+    <string name="choose_form_you_device">আপনার ডিভাইস থেকে চয়ন করুন</string>
+    <string name="upload">আপলোড করুন</string>
+    <string name="product_name">পণ্যের নাম</string>
+    <string name="enter_product_price">₹ পণ্যের মূল্য লিখুন</string>
+    <string name="product_price">পণ্যের দাম</string>
+    <string name="product_available">পণ্য উপলব্ধ</string>
+    <string name="enter_available_quantity">উপলব্ধ পরিমাণ লিখুন</string>
+    <string name="product_image">পণ্যের ছবি</string>
+    <string name="upload1">আপলোড করুন</string>
+    <string name="no_results_found">কোন ফলাফল পাওয়া যায়নি</string>
+    <string name="edit">সম্পাদনা করুন</string>
+    <string name="available">পাওয়া যায়</string>
+    <string name="productprice">পণ্যের মূল্য</string>
+    <string name="_0_ratings">0 রেটিং</string>
+    <string name="rate_now">এখন রেট</string>
+    <string name="user_name">ব্যবহারকারীর নাম</string>
+    <string name="user_review">ব্যবহারকারী পর্যালোচনা</string>
+    <string name="product_name1">পণ্যের নাম</string>
+    <string name="_0">(0)</string>
+    <string name="loading">লোড হচ্ছে...</string>
+    <string name="select_your_language">আপনার ভাষা নির্বাচন করুন</string>
+
+    <string-array name="vegitable">
+        <item>আইটেম নির্বাচন করুন</item>
+        <item>ফুলকপি</item>
+        <item>টমেটো</item>
+        <item>আলু</item>
+        <item>পেঁয়াজ</item>
+        <item>গাজর</item>
+        <item>বাঁধাকপি</item>
+        <item>শসা</item>
+        <item>ঢেঁড়স</item>
+        <item>গম</item>
+        <item>আপেল</item>
+        <item>কমলা</item>
+        <item>কলা</item>
+    </string-array>
+
+    <string-array name="country_list">
+        <item>ভারত</item>
+        <item>মার্কিন যুক্তরাষ্ট্র</item>
+        <item>কানাডা</item>
+        <item>অস্ট্রেলিয়া</item>
+        <item>যুক্তরাজ্য</item>
+    </string-array>
+
+    <string-array name="state_list">
+        <item>ওডিশা</item>
+        <item>আন্ধ্র প্রদেশ</item>
+        <item>বিহার</item>
+        <item>দিল্লি</item>
+        <item>মহারাষ্ট্র</item>
+        <item>রাজস্থান</item>
+        <item>উত্তর প্রদেশ</item>
+        <item>পশ্চিমবঙ্গ</item>
+    </string-array>
+
+    <string-array name="number_array">
+        <item>১</item>  <!-- 1 -->
+        <item>২</item>  <!-- 2 -->
+        <item>৩</item>  <!-- 3 -->
+        <item>৪</item>  <!-- 4 -->
+        <item>৫</item>  <!-- 5 -->
+        <item>৬</item>  <!-- 6 -->
+        <item>৭</item>  <!-- 7 -->
+        <item>৮</item>  <!-- 8 -->
+        <item>৯</item>  <!-- 9 -->
+        <item>১০</item>  <!-- 10 -->
+    </string-array>
+
+    <string-array name="weights">
+        <item>১ কেজি</item>
+        <item>২ কেজি</item>
+        <item>৫০০ গ্রাম</item>
+        <item>২০০ গ্রাম</item>
+        <item>১০০ গ্রাম</item>
+    </string-array>
+
+    <string name="give_product_s_details">পণ্য সম্পর্কে বিস্তারিত দিন</string>
+    <string name="description">বর্ণনা</string>
+    <string name="enter_description">বিবরণ লিখুন</string>
+    <string name="type">টাইপ</string>
+    <string name="yes">হ্যাঁ</string>
+    <string name="no">না</string>
+    <string name="chemical_used">রাসায়নিক ব্যবহার করা হয়?</string>
+    <string name="how_much_and_which">কত (%) এবং কোনটি?</string>
+    <string name="variants">বৈকল্পিক</string>
+    <string name="more_details">আরো বিস্তারিত</string>
+    <string name="net_quantity">নেট পরিমাণ</string>
+    <string name="product_description">পণ্য বিবরণ</string>
+    <string name="organic">জৈব</string>
+    <string name="product_id">পণ্যের আইডি</string>
+    <string name="customers_review">গ্রাহক পর্যালোচনা</string>
+    <string name="chemical_details">যা কেমিক্যাল</string>
+    <string name="share_your_thoughts_to_other_customers">অন্যান্য গ্রাহকদের আপনার চিন্তা শেয়ার করুন</string>
+    <string name="address">ঠিকানা</string>
+    <string name="order_summary">অর্ডার সারাংশ</string>
+    <string name="payment">পেমেন্ট</string>
+    <string name="packOf">প্যাক অফ</string>
+    <string name="Price">দাম।</string>
+    <string name="Continue">চালিয়ে যান</string>
+    <string name="Home">বাড়ি</string>
+    <string name="orders">অর্ডার</string>
+    <string name="cart">কার্ট</string>
+    <string name="opps_no_items_founds">ওহো!কোন আইটেম পাওয়া যায়নি!</string>
+    <string name="continue_shopping">কেনাকাটা চালিয়ে যান</string>
+    <string name="select_variant">বৈকল্পিক নির্বাচন করুন</string>
+    <string name="select_variant_here">এখানে বৈকল্পিক নির্বাচন করুন</string>
+    <string name="variant1">ভেরিয়েন্ট 1:</string>
+    <string name="variant2">ভেরিয়েন্ট 2:</string>
+    <string name="variant3">বৈকল্পিক 3:</string>
+    <string name="variant4">বৈকল্পিক 4:</string>
+    <string name="variant5">বৈকল্পিক 5:</string>
+    <string name="weight">(ওজন)</string>
+
+</resources>

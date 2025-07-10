@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">إعدادات</string>
+    <string name="app_name">مركز الزراعة</string>
+    <string name="price">سعر</string>
+    <string name="available1">متاح</string>
+    <string name="upload_and_produce">التحميل والإنتاج</string>
+    <string name="manage_product">إدارة المنتج</string>
+    <string name="approval">موافقة</string>
+    <string name="chat">محادثة</string>
+    <string name="profile">حساب تعريفي</string>
+    <string name="referesh">ينعش</string>
+    <string name="update_profile">تحديث الملف الشخصي</string>
+    <string name="update_email">تحديث البريد الإلكتروني</string>
+    <string name="settings">إعدادات</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="delete_profile">حذف الملف الشخصي</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="email">بريد إلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forgot_password">هل نسيت كلمة السر؟</string>
+    <string name="not_yet_registered">لم يتم التسجيل بعد؟</string>
+    <string name="signup_now">سجل الآن</string>
+    <string name="register_here">سجل هنا</string>
+    <string name="full_name">الاسم الكامل*</string>
+    <string name="your_name">اسمك</string>
+    <string name="your_email">بريدك الإلكتروني</string>
+    <string name="Email">بريد إلكتروني*</string>
+    <string name="phone_number">رقم التليفون*</string>
+    <string name="enter_your_10_digit_phone_number_91">أدخل رقم هاتفك المكون من 10 أرقام (+91)</string>
+    <string name="gender">جنس*</string>
+    <string name="female">أنثى</string>
+    <string name="male">ذكر</string>
+    <string name="select_date_of_birth_dd_mm_yyyy">حدد تاريخ الميلاد (dd/mm/yyyy)*</string>
+    <string name="select_your_date_of_birth_dd_mm_yyyy">حدد تاريخ ميلادك (dd/mm/yyyy)</string>
+    <string name="Password">كلمة المرور*</string>
+    <string name="pwd">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور*</string>
+    <string name="cmpwd">تأكيد كلمة المرور</string>
+    <string name="registration">تسجيل</string>
+    <string name="do_you_have_an_existing_account">هل لديك حساب موجود؟</string>
+    <string name="lgn">تسجيل الدخول</string>
+    <string name="please_enter_the_registered_email_to_get_the_reset_link">الرجاء إدخال البريد الإلكتروني المسجل للحصول على رابط إعادة التعيين</string>
+    <string name="emailf">بريد إلكتروني*</string>
+    <string name="enter_your_email_here">أدخل بريدك الإلكتروني هنا</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="welcome_to">مرحباً بكم في</string>
+    <string name="agri_hub">مركز الزراعة</string>
+    <string name="farmer_login">تسجيل دخول المزارع</string>
+    <string name="user_login">تسجيل دخول المستخدم</string>
+    <string name="add_to_cart">أضف إلى السلة</string>
+    <string name="buy_now">اشتري الآن</string>
+    <string name="rate_this_product">قم بتقييم هذا المنتج</string>
+    <string name="write_a_review">اكتب مراجعة...</string>
+    <string name="submit">يُقدِّم</string>
+    <string name="total_ratings_0">إجمالي التقييمات: 0</string>
+    <string name="upload_your_profile_pic">قم بتحميل صورة ملفك الشخصي</string>
+    <string name="choose_form_you_device">اختر من جهازك</string>
+    <string name="upload">رفع</string>
+    <string name="product_name">اسم المنتج</string>
+    <string name="enter_product_price">₹ أدخل سعر المنتج</string>
+    <string name="product_price">سعر المنتج</string>
+    <string name="product_available">المنتج متوفر</string>
+    <string name="enter_available_quantity">أدخل الكمية المتوفرة</string>
+    <string name="product_image">صورة المنتج</string>
+    <string name="upload1">رفع</string>
+    <string name="no_results_found">لم يتم العثور على نتائج</string>
+    <string name="edit">يحرر</string>
+    <string name="available">متاح</string>
+    <string name="productprice">سعر المنتج</string>
+    <string name="_0_ratings">0 تقييمات</string>
+    <string name="rate_now">قيم الآن</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="user_review">مراجعة المستخدم</string>
+    <string name="product_name1">اسم المنتج</string>
+    <string name="_0">(0)</string>
+    <string name="loading">تحميل...</string>
+    <string name="select_your_language">اختر لغتك</string>
+
+    <string-array name="vegitable">
+        <item>اختر عنصرًا</item>
+        <item>قرنبيط</item>
+        <item>طماطم</item>
+        <item>بطاطس</item>
+        <item>بصل</item>
+        <item>جزر</item>
+        <item>ملفوف</item>
+        <item>خيار</item>
+        <item>بامية</item>
+        <item>قمح</item>
+        <item>تفاح</item>
+        <item>برتقال</item>
+        <item>موز</item>
+    </string-array>
+
+    <string-array name="country_list">
+        <item>الهند</item>
+        <item>الولايات المتحدة</item>
+        <item>كندا</item>
+        <item>أستراليا</item>
+        <item>المملكة المتحدة</item>
+    </string-array>
+
+    <string-array name="state_list">
+        <item>أوديشا</item>
+        <item>أندرا براديش</item>
+        <item>بيهار</item>
+        <item>دلهي</item>
+        <item>ماهاراشترا</item>
+        <item>راجستان</item>
+        <item>أوتار براديش</item>
+        <item>البنغال الغربية</item>
+    </string-array>
+
+    <string-array name="number_array">
+        <item>১</item>  <!-- 1 -->
+        <item>২</item>  <!-- 2 -->
+        <item>৩</item>  <!-- 3 -->
+        <item>৪</item>  <!-- 4 -->
+        <item>৫</item>  <!-- 5 -->
+        <item>৬</item>  <!-- 6 -->
+        <item>৭</item>  <!-- 7 -->
+        <item>৮</item>  <!-- 8 -->
+        <item>৯</item>  <!-- 9 -->
+        <item>১০</item>  <!-- 10 -->
+    </string-array>
+
+    <string-array name="weights">
+        <item>١ كجم</item>
+        <item>٢ كجم</item>
+        <item>٥٠٠ جم</item>
+        <item>٢٠٠ جم</item>
+        <item>١٠٠ جم</item>
+    </string-array>
+
+    <string name="give_product_s_details">إعطاء تفاصيل حول المنتج</string>
+    <string name="description">وصف</string>
+    <string name="enter_description">أدخل الوصف</string>
+    <string name="type">يكتب</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="chemical_used">هل تم استخدام مادة كيميائية؟</string>
+    <string name="how_much_and_which">كم (%) وأيها؟</string>
+    <string name="variants">المتغيرات</string>
+    <string name="more_details">مزيد من التفاصيل</string>
+    <string name="net_quantity">الكمية الصافية</string>
+    <string name="product_description">وصف المنتج</string>
+    <string name="organic">عضوي</string>
+    <string name="product_id">معرف المنتج</string>
+    <string name="customers_review">آراء العملاء</string>
+    <string name="chemical_details">أي مادة كيميائية</string>
+    <string name="share_your_thoughts_to_other_customers">شارك أفكارك مع العملاء الآخرين</string>
+    <string name="address">عنوان</string>
+    <string name="order_summary">ملخص الطلب</string>
+    <string name="payment">قسط</string>
+    <string name="packOf">حزمة من</string>
+    <string name="Price">سعر</string>
+    <string name="Continue">يكمل</string>
+    <string name="Home">بيت</string>
+    <string name="orders">الطلبات</string>
+    <string name="cart">عربة التسوق</string>
+    <string name="opps_no_items_founds">عفواً! لم يتم العثور على أي عناصر!</string>
+    <string name="continue_shopping">تابع التسوق</string>
+    <string name="select_variant">حدد المتغير</string>
+    <string name="select_variant_here">حدد البديل هنا</string>
+    <string name="variant1">البديل 1:</string>
+    <string name="variant2">البديل 2:</string>
+    <string name="variant3">البديل 3:</string>
+    <string name="variant4">البديل 4:</string>
+    <string name="variant5">البديل 5:</string>
+    <string name="weight">(وزن)</string>
+
+</resources>

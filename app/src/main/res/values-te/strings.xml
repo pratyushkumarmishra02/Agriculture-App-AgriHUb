@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">సెట్టింగ్‌లు</string>
+    <string name="app_name">అగ్రి_హబ్</string>
+    <string name="price">ధర</string>
+    <string name="available1">అందుబాటులో ఉంది</string>
+    <string name="upload_and_produce">అప్‌లోడ్ చేసి ఉత్పత్తి చేయండి</string>
+    <string name="manage_product">ఉత్పత్తిని నిర్వహించండి</string>
+    <string name="approval">ఆమోదం</string>
+    <string name="chat">చాట్ చేయండి</string>
+    <string name="profile">ప్రొఫైల్</string>
+    <string name="referesh">రిఫ్రెష్ చేయండి</string>
+    <string name="update_profile">ప్రొఫైల్‌ను నవీకరించండి</string>
+    <string name="update_email">ఇమెయిల్‌ను నవీకరించండి</string>
+    <string name="settings">సెట్టింగ్‌లు</string>
+    <string name="change_password">పాస్‌వర్డ్ మార్చండి</string>
+    <string name="delete_profile">ప్రొఫైల్‌ను తొలగించండి</string>
+    <string name="log_out">లాగ్ అవుట్ చేయండి</string>
+    <string name="login">లాగిన్ చేయండి</string>
+    <string name="email">ఇమెయిల్</string>
+    <string name="password">పాస్వర్డ్</string>
+    <string name="forgot_password">పాస్‌వర్డ్ మర్చిపోయారా?</string>
+    <string name="not_yet_registered">ఇంకా నమోదు కాలేదా?</string>
+    <string name="signup_now">ఇప్పుడే సైన్ అప్ చేయండి</string>
+    <string name="register_here">ఇక్కడ నమోదు చేసుకోండి</string>
+    <string name="full_name">పూర్తి పేరు*</string>
+    <string name="your_name">మీ పేరు</string>
+    <string name="your_email">మీ ఇమెయిల్</string>
+    <string name="Email">ఇమెయిల్*</string>
+    <string name="phone_number">ఫోన్ నంబర్*</string>
+    <string name="enter_your_10_digit_phone_number_91">మీ 10 అంకెల ఫోన్ నంబర్ (+91) నమోదు చేయండి</string>
+    <string name="gender">లింగం*</string>
+    <string name="female">స్త్రీ</string>
+    <string name="male">పురుషుడు</string>
+    <string name="select_date_of_birth_dd_mm_yyyy">పుట్టిన తేదీని ఎంచుకోండి (dd/mm/yyyy)*</string>
+    <string name="select_your_date_of_birth_dd_mm_yyyy">మీ పుట్టిన తేదీని ఎంచుకోండి (dd/mm/yyyy)</string>
+    <string name="Password">పాస్‌వర్డ్*</string>
+    <string name="pwd">పాస్వర్డ్</string>
+    <string name="confirm_password">పాస్‌వర్డ్‌ని నిర్ధారించండి*</string>
+    <string name="cmpwd">పాస్‌వర్డ్‌ని నిర్ధారించండి</string>
+    <string name="registration">నమోదు</string>
+    <string name="do_you_have_an_existing_account">మీకు ఇప్పటికే ఖాతా ఉందా?</string>
+    <string name="lgn">లాగిన్ చేయండి</string>
+    <string name="please_enter_the_registered_email_to_get_the_reset_link">రీసెట్ లింక్‌ని పొందడానికి దయచేసి నమోదిత ఇమెయిల్‌ను నమోదు చేయండి</string>
+    <string name="emailf">ఇమెయిల్*</string>
+    <string name="enter_your_email_here">మీ ఇమెయిల్‌ను ఇక్కడ నమోదు చేయండి</string>
+    <string name="reset_password">పాస్‌వర్డ్‌ని రీసెట్ చేయండి</string>
+    <string name="welcome_to">కు స్వాగతం</string>
+    <string name="agri_hub">అగ్రి_హబ్</string>
+    <string name="farmer_login">రైతు లాగిన్</string>
+    <string name="user_login">వినియోగదారు లాగిన్</string>
+    <string name="add_to_cart">కార్ట్‌కి జోడించండి</string>
+    <string name="buy_now">ఇప్పుడే కొనండి</string>
+    <string name="rate_this_product">ఈ ఉత్పత్తిని రేట్ చేయండి</string>
+    <string name="write_a_review">సమీక్ష వ్రాయండి...</string>
+    <string name="submit">సమర్పించండి</string>
+    <string name="total_ratings_0">మొత్తం రేటింగ్‌లు: 0</string>
+    <string name="upload_your_profile_pic">మీ ప్రొఫైల్ చిత్రాన్ని అప్‌లోడ్ చేయండి</string>
+    <string name="choose_form_you_device">మీ పరికరం నుండి ఎంచుకోండి</string>
+    <string name="upload">అప్‌లోడ్ చేయండి</string>
+    <string name="product_name">ఉత్పత్తి పేరు</string>
+    <string name="enter_product_price">₹ ఉత్పత్తి ధరను నమోదు చేయండి</string>
+    <string name="product_price">ఉత్పత్తి ధర</string>
+    <string name="product_available">ఉత్పత్తి అందుబాటులో ఉంది</string>
+    <string name="enter_available_quantity">అందుబాటులో ఉన్న పరిమాణాన్ని నమోదు చేయండి</string>
+    <string name="product_image">ఉత్పత్తి చిత్రం</string>
+    <string name="upload1">అప్‌లోడ్ చేయండి</string>
+    <string name="no_results_found">ఫలితాలు ఏవీ కనుగొనబడలేదు</string>
+    <string name="edit">సవరించు</string>
+    <string name="available">అందుబాటులో ఉంది</string>
+    <string name="productprice">ఉత్పత్తి ధర</string>
+    <string name="_0_ratings">0 రేటింగ్‌లు</string>
+    <string name="rate_now">ఇప్పుడే రేట్ చేయండి</string>
+    <string name="user_name">వినియోగదారు పేరు</string>
+    <string name="user_review">వినియోగదారు సమీక్ష</string>
+    <string name="product_name1">ఉత్పత్తి పేరు</string>
+    <string name="_0">(0)</string>
+    <string name="loading">లోడ్ అవుతోంది...</string>
+    <string name="select_your_language">మీ భాషను ఎంచుకోండి</string>
+
+    <string-array name="vegitable">
+        <item>అయిటెం ఎంచుకోండి</item>
+        <item>కౌలీఫ్లవర్</item>
+        <item>టమోటా</item>
+        <item>బంగాళాదుంప</item>
+        <item>ఉల్లిపాయలు</item>
+        <item>క్యారెట్</item>
+        <item>కాబేజీ</item>
+        <item>దోసకాయ</item>
+        <item>బెండకాయ</item>
+        <item>గోధుమ</item>
+        <item>ఆపిల్</item>
+        <item>నారింజ</item>
+        <item>అరటిపండు</item>
+    </string-array>
+
+    <string-array name="country_list">
+        <item>భారతదేశం</item>
+        <item>అమెరికా</item>
+        <item>కెనడా</item>
+        <item>ఆస్ట్రేలియా</item>
+        <item>యునైటెడ్ కింగ్‌డమ్</item>
+    </string-array>
+
+    <string-array name="state_list">
+        <item>ఒడిశా</item>
+        <item>ఆంధ్రప్రదేశ్</item>
+        <item>బీహార్</item>
+        <item>ఢిల్లీ</item>
+        <item>మహారాష్ట్ర</item>
+        <item>రాజస్థాన్</item>
+        <item>ఉత్తరప్రదేశ్</item>
+        <item>పశ్చిమ బెంగాల్</item>
+    </string-array>
+
+    <string-array name="number_array">
+        <item>౧</item>  <!-- 1 -->
+        <item>౨</item>  <!-- 2 -->
+        <item>౩</item>  <!-- 3 -->
+        <item>౪</item>  <!-- 4 -->
+        <item>౫</item>  <!-- 5 -->
+        <item>౬</item>  <!-- 6 -->
+        <item>౭</item>  <!-- 7 -->
+        <item>౮</item>  <!-- 8 -->
+        <item>౯</item>  <!-- 9 -->
+        <item>౧౦</item>  <!-- 10 -->
+    </string-array>
+
+    <string-array name="weights">
+        <item>1 కిలోగ్రా</item>
+        <item>2 కిలోగ్రా</item>
+        <item>500 గ్రాము</item>
+        <item>200 గ్రాము</item>
+        <item>100 గ్రాము</item>
+    </string-array>
+
+    <string name="give_product_s_details">ఉత్పత్తి గురించి వివరాలు ఇవ్వండి</string>
+    <string name="description">వివరణ</string>
+    <string name="enter_description">వివరణను నమోదు చేయండి</string>
+    <string name="type">టైప్ చేయండి</string>
+    <string name="yes">అవును</string>
+    <string name="no">నం</string>
+    <string name="chemical_used">రసాయనం వాడారా?</string>
+    <string name="how_much_and_which">ఎంత (%) మరియు ఏది?</string>
+    <string name="variants">రూపాంతరాలు</string>
+    <string name="more_details">మరిన్ని వివరాలు</string>
+    <string name="net_quantity">నికర పరిమాణం</string>
+    <string name="product_description">ఉత్పత్తి వివరణ</string>
+    <string name="organic">ఆర్గానిక్</string>
+    <string name="product_id">ఉత్పత్తి ID</string>
+    <string name="customers_review">కస్టమర్ రివ్యూలు</string>
+    <string name="chemical_details">ఏ కెమికల్</string>
+    <string name="share_your_thoughts_to_other_customers">మీ ఆలోచనలను ఇతర కస్టమర్‌లతో పంచుకోండి</string>
+    <string name="address">చిరునామా</string>
+    <string name="order_summary">ఆర్డర్ సారాంశం</string>
+    <string name="payment">చెల్లింపు</string>
+    <string name="packOf">ప్యాక్ ఆఫ్</string>
+    <string name="Price">ధర</string>
+    <string name="Continue">కొనసాగించు</string>
+    <string name="Home">హోమ్</string>
+    <string name="orders">ఆర్డర్లు</string>
+    <string name="cart">కార్ట్</string>
+    <string name="opps_no_items_founds">అయ్యో!ఐటెమ్‌లు ఏవీ కనుగొనబడలేదు!</string>
+    <string name="continue_shopping">షాపింగ్ కొనసాగించండి</string>
+    <string name="select_variant">వేరియంట్‌ని ఎంచుకోండి</string>
+    <string name="select_variant_here">ఇక్కడ వేరియంట్‌ని ఎంచుకోండి</string>
+    <string name="variant1">వేరియంట్ 1:</string>
+    <string name="variant2">వేరియంట్2:</string>
+    <string name="variant3">వేరియంట్ 3:</string>
+    <string name="variant4">వేరియంట్ 4:</string>
+    <string name="variant5">వేరియంట్ 5:</string>
+    <string name="weight">(బరువు)</string>
+
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#52576162"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to"
+            android:textSize="30sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agri_hub"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"
+            android:background="#E54122"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/multiLang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:layout_below="@+id/titleContainer"
+        android:padding="16sp"
+        >
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_select_language"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/select_language"-->
+<!--            android:textSize="30sp"-->
+<!--            android:layout_marginStart="89dp"-->
+<!--            android:textColor="#333333"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginBottom="12dp" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinner_language"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:padding="12dp"-->
+<!--            android:fontFamily="serif"-->
+<!--            android:layout_marginStart="135dp"-->
+<!--            android:gravity="center"-->
+<!--            android:textAlignment="center"-->
+<!--            android:background="@android:drawable/btn_dropdown"-->
+<!--            android:layout_below="@id/tv_select_language"-->
+<!--            android:layout_marginTop="8dp" />-->
+
+        <Button
+            android:id="@+id/languageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/select_your_language"
+            android:background="@drawable/rate_button"
+            app:backgroundTint="@null"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/sectionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/multiLang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:id="@+id/farmerSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="79dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="Farmer Icon"
+                android:src="@drawable/farmer" />
+
+            <Button
+                android:id="@+id/farmerLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/farmer_login"
+                android:textSize="24sp"
+                android:background="@drawable/rate_button"
+                app:backgroundTint="@null"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_below="@id/farmerSection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/user"
+                android:contentDescription="User Icon"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/userLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_login"
+                android:textSize="24sp"
+                android:background="@drawable/rate_button"
+                app:backgroundTint="@null"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

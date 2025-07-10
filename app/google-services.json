@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "724634876054",
+    "project_id": "agrihub-5f862",
+    "storage_bucket": "agrihub-5f862.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724634876054:android:d5064f219cd7341bc6aab7",
+        "android_client_info": {
+          "package_name": "com.example.Agri_Hub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBefNNI9j7TmuV-Jr4ts3PlLj3Ai-Wtxr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_gray">
+
+    <!-- Toolbar at the top -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_alignParentTop="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/light_grey">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/light_grey">
+
+            <!-- Step Indicator (Address -> Order Summary -> Payment) -->
+
+            <FrameLayout
+                android:id="@+id/frame2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <!-- Step 1 -->
+                    <LinearLayout
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="✔"
+                            android:textSize="24sp"
+                            android:textColor="@color/green"
+                            android:fontFamily="sans-serif"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/address"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <!-- Line 1 -->
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="2dp"
+                        android:background="@color/blue"
+                        android:layout_gravity="center"/>
+
+                    <!-- Step 2 -->
+                    <LinearLayout
+                        android:id="@+id/orderSummary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="✔"
+                            android:textSize="24sp"
+                            android:textColor="@color/green"
+                            android:fontFamily="sans-serif"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_summary"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <!-- Line 2 -->
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="2dp"
+                        android:background="@color/blue"
+                        android:layout_gravity="center"/>
+
+                    <!-- Step 3 -->
+                    <LinearLayout
+                        android:id="@+id/payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/step_active"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/payment"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        <!-- Total Amount -->
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8F5E9"
+            android:padding="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#007AFF"
+                android:layout_marginStart="150dp" />
+        </LinearLayout>
+        </FrameLayout>
+
+
+        <!-- Payment Methods -->
+            <FrameLayout
+                android:id="@+id/frame3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+           >
+
+            <!-- Credit / Debit / ATM Card -->
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#E8F5E9"
+                android:padding="8dp"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/creditcard"/>
+
+                <Button
+                    android:id="@+id/creditCard"
+                    android:layout_width="200dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Credit / Debit / ATM Card"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Net Banking -->
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#E8F5E9"
+                android:padding="8dp"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/netbank"/>
+
+                <Button
+                    android:id="@+id/netBanking"
+                    android:layout_width="200dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Net Banking"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- UPI -->
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#E8F5E9"
+                android:padding="8dp"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/upi"/>
+
+                <Button
+                    android:id="@+id/upi"
+                    android:layout_width="200dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="UPI"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Cash on Delivery -->
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#E8F5E9"
+                android:padding="8dp"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cashondelivery"/>
+
+                <Button
+                    android:id="@+id/cashOnDelivery"
+                    android:layout_width="200dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cash On Delivery"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- EMI (Unavailable) -->
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/emi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EMI"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Unavailable"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:paddingStart="100dp"
+                    android:textStyle="bold"
+                    android:textColor="#DF9191"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+            </FrameLayout>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

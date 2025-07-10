@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailActivity">
+
+    <!-- Toolbar at the top -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_alignParentTop="true"/>
+
+    <!-- ScrollView to make content scrollable -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/bottomSection"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/light_gray"
+            android:paddingBottom="8dp">
+
+            <!-- Product Image Section -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:id="@+id/info_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top|end"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/info"
+                    android:padding="6dp"
+                    android:layout_margin="10dp"/>
+            </FrameLayout>
+
+            <!-- Product Details Section -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Product Name -->
+                    <TextView
+                        android:id="@+id/product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:hint="@string/loading"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="6dp"/>
+
+                    <!-- Price -->
+                    <TextView
+                        android:id="@+id/product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:hint="@string/loading"
+                        android:textStyle="bold"
+                        android:textColor="#388E3C"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:id="@+id/product_availability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/loading"
+                        android:textSize="16sp"
+                        android:textColor="#757575"/>
+
+                    <!-- Rating Section -->
+                    <LinearLayout
+                        android:id="@+id/ratingLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/rating_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/_0"
+                            android:textColor="@color/green"
+                            android:textSize="14sp" />
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:paddingStart="2dp"
+                            android:stepSize="0.1"
+                            android:isIndicator="true"
+                            android:progressTint="@color/orange"
+                            style="?android:attr/ratingBarStyleSmall"/>
+
+                        <TextView
+                            android:id="@+id/total_ratings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_0_ratings"
+                            android:textColor="#616161"
+                            android:textSize="14sp"
+                            android:paddingStart="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/qtyLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Qty: "
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                        <Spinner
+                            android:id="@+id/qtySpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/variants"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/variantCard1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="12dp"
+                                app:cardElevation="4dp">
+
+                                <LinearLayout
+                                    android:id="@+id/cardLayout1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:padding="16dp"
+                                    android:background="@drawable/search_bg">
+
+
+                                    <TextView
+                                        android:id="@+id/variantWeight1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/loading"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"/>
+
+                                    <TextView
+                                        android:id="@+id/variantPrice1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/loading"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/variantCard2"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="12dp"
+                                app:cardElevation="4dp">
+
+                                <LinearLayout
+                                    android:id="@+id/cardLayout2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:padding="16dp"
+                                    android:background="@drawable/search_bg">
+
+
+                                    <TextView
+                                        android:id="@+id/variantWeight2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/loading"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"/>
+
+                                    <TextView
+                                        android:id="@+id/variantPrice2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/loading"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/variantCard3"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="12dp"
+                                app:cardElevation="4dp">
+
+                                <LinearLayout
+                                    android:id="@+id/cardLayout3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:padding="16dp"
+                                    android:background="@drawable/search_bg">
+
+
+                                    <TextView
+                                        android:id="@+id/variantWeight3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/loading"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"/>
+
+                                    <TextView
+                                        android:id="@+id/variantPrice3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/loading"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/variantCard4"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="12dp"
+                                app:cardElevation="4dp">
+
+                                <LinearLayout
+                                    android:id="@+id/cardLayout4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:padding="16dp"
+                                    android:background="@drawable/search_bg">
+
+
+                                    <TextView
+                                        android:id="@+id/variantWeight4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/loading"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"/>
+
+                                    <TextView
+                                        android:id="@+id/variantPrice4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/loading"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/variantCard5"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="12dp"
+                                app:cardElevation="4dp">
+
+                                <LinearLayout
+                                    android:id="@+id/cardLayout5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:padding="16dp"
+                                    android:background="@drawable/search_bg">
+
+
+                                    <TextView
+                                        android:id="@+id/variantWeight5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/loading"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"/>
+
+                                    <TextView
+                                        android:id="@+id/variantPrice5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/loading"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Product Description -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/product_description"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/productDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/loading"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/more_details"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_margin="10dp"
+                        android:stretchColumns="1">
+
+                        <!-- Row for Pack of -->
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/packOf"
+                                android:textSize="16sp"
+                                android:textColor="@color/gray" />
+
+                            <TextView
+                                android:id="@+id/packUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loading"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:paddingStart="40dp"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/net_quantity"
+                                android:textSize="16sp"
+                                android:textColor="@color/gray" />
+
+                            <TextView
+                                android:id="@+id/netQuantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loading"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:paddingStart="40dp"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/available"
+                                android:textSize="16sp"
+                                android:textColor="@color/gray" />
+
+                            <TextView
+                                android:id="@+id/available"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loading"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:paddingStart="40dp"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+
+                        <!-- Row for Brand -->
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/organic"
+                                android:textSize="16sp"
+                                android:textColor="@color/gray" />
+
+                            <TextView
+                                android:id="@+id/organic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loading"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:paddingStart="40dp"
+                                android:textColor="@color/black" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/chemical_used"
+                                android:textSize="16sp"
+                                android:textColor="@color/gray" />
+
+                            <TextView
+                                android:id="@+id/chemical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loading"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:paddingStart="40dp"
+                                android:textColor="@color/black" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/chemical_details"
+                                android:textSize="16sp"
+                                android:textColor="@color/gray" />
+
+                            <TextView
+                                android:id="@+id/whichChemical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loading"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:paddingStart="40dp"
+                                android:textColor="@color/black" />
+                        </TableRow>
+
+                        <!-- Row for Model Name -->
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/product_id"
+                                android:textSize="16sp"
+                                android:textColor="@color/gray" />
+
+                            <TextView
+                                android:id="@+id/pid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loading"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:paddingStart="40dp"
+                                android:textColor="@color/black" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/type"
+                                android:textSize="16sp"
+                                android:textColor="@color/gray" />
+
+                            <TextView
+                                android:id="@+id/type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loading"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:paddingStart="40dp"
+                                android:textColor="@color/black" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Ratings Section -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ratingSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customers_review"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+                    <!-- Rating Section -->
+                    <LinearLayout
+                        android:id="@+id/ratingLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:stepSize="0.1"
+                            android:isIndicator="true"
+                            android:progressTint="@color/orange"
+                            style="?android:attr/ratingBarStyleSmall"/>
+
+                        <TextView
+                            android:id="@+id/total_ratings1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_0_ratings"
+                            android:textColor="#616161"
+                            android:textSize="14sp"
+                            android:paddingStart="10dp"/>
+                    </LinearLayout>
+
+
+                    <!-- Rating Breakdown -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="8dp">
+
+                        <!-- 5 Star -->
+                        <LinearLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5 star" />
+                            <ProgressBar android:id="@+id/progress5"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="8dp"
+                                android:progressTint="@color/orange"
+                                android:layout_weight="1"
+                                android:max="100"
+                                android:progress="97" />
+                            <TextView android:id="@+id/percent5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="97%" />
+                        </LinearLayout>
+
+                        <!-- 4 Star -->
+                        <LinearLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4 star" />
+                            <ProgressBar android:id="@+id/progress4"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="8dp"
+                                android:layout_weight="1"
+                                android:progressTint="@color/orange"
+                                android:max="100"
+                                android:progress="70" />
+                            <TextView android:id="@+id/percent4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0%" />
+                        </LinearLayout>
+
+                        <!-- 3 Star -->
+                        <LinearLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3 star" />
+                            <ProgressBar android:id="@+id/progress3"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="8dp"
+                                android:layout_weight="1"
+                                android:progressTint="@color/orange"
+                                android:max="100"
+                                android:progress="56" />
+                            <TextView android:id="@+id/percent3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0%" />
+                        </LinearLayout>
+
+                        <!-- 2 Star -->
+                        <LinearLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2 star" />
+                            <ProgressBar android:id="@+id/progress2"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="8dp"
+                                android:progressTint="@color/orange"
+                                android:layout_weight="1"
+                                android:max="100"
+                                android:progress="2" />
+                            <TextView android:id="@+id/percent2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2%" />
+                        </LinearLayout>
+
+                        <!-- 1 Star -->
+                        <LinearLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1 star" />
+                            <ProgressBar android:id="@+id/progress1"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="8dp"
+                                android:progressTint="@color/orange"
+                                android:layout_weight="1"
+                                android:max="100"
+                                android:progress="0" />
+                            <TextView android:id="@+id/percent1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0%" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rate_this_product"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share_your_thoughts_to_other_customers"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:id="@+id/rateNow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rate_now"
+                        android:textSize="18sp"
+                        android:background="@drawable/rate_button"
+                        app:backgroundTint="@null"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Button Section -->
+
+    <com.example.Agri_Hub.DiagonalButton
+        android:id="@+id/goToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to cart"
+        android:background="@drawable/button_add_to_cart"
+        app:backgroundTint="@null"
+        android:layout_above="@+id/bottom_navigation"
+        android:textColor="#fff"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/bottomSection"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:visibility="visible"
+        android:layout_above="@+id/bottom_navigation"
+        android:padding="8dp"
+        android:elevation="8dp">
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/add_to_cart"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/button_add_to_cart"
+            app:backgroundTint="@null"
+            android:padding="10dp"
+            android:elevation="8dp"/>
+
+        <com.example.Agri_Hub.DiagonalButton
+            android:id="@+id/btnBuyNow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/buy_now"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/button_buy_now"
+            app:backgroundTint="@null"
+            android:padding="10dp"
+            android:elevation="8dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E3F2FD"
+        app:itemIconTint="@drawable/navigation_selector"
+        app:itemTextColor="@drawable/navigation_selector"
+        app:menu="@menu/bottom_menu"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

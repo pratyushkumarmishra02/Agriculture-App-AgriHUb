@@ -1,0 +1,76 @@
+plugins {
+    id("com.android.application")
+    id("com.google.gms.google-services")
+}
+
+android {
+    namespace 'com.example.Agri_Hub'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.Agri_Hub"
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file("../app/my_debug.keystore")
+            storePassword "123456"
+            keyAlias "my_debug_key"
+            keyPassword "123456"
+        }
+    }
+
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+
+
+dependencies {
+
+    implementation(platform("com.google.firebase:firebase-bom:33.16.0"))
+    //implementation 'com.google.firebase:firebase-analytics'
+    implementation("com.google.firebase:firebase-analytics")
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.activity:activity:1.9.0'
+    implementation 'com.google.android.gms:play-services-base:18.3.0'
+    implementation 'com.google.android.gms:play-services-auth:21.3.0'
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation libs.appcompat
+    implementation libs.car.ui.lib
+    implementation libs.material
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //implementation 'dev.shreyaspatil:EasyUpiPayment:1.0.3'
+    implementation libs.constraintlayout
+    implementation libs.play.services.tasks
+    implementation libs.firebase.auth
+    implementation libs.firebase.database
+    implementation libs.firebase.firestore
+    implementation libs.firebase.storage
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <!-- Toolbar at the top -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_alignParentTop="true"/>
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!-- Step 1 -->
+            <LinearLayout
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/step_active"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- Line 1 -->
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="@color/light_gray"
+                android:layout_gravity="center"/>
+
+            <!-- Step 2 -->
+            <LinearLayout
+                android:id="@+id/orderSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/step_inactive"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_summary"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Line 2 -->
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="@color/light_gray"
+                android:layout_gravity="center"/>
+
+            <!-- Step 3 -->
+            <LinearLayout
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/step_inactive"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@+id/frame1"
+        android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Full Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name *"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name" />
+
+        <!-- Mobile Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number *"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/phoneInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"
+                android:maxLength="10"/>
+        </LinearLayout>
+
+        <!-- Flat / House No -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flat / House No (If Any)"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/houseInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Flat / House No" />
+
+        <!-- Street / Area -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Street / Area / Colony / Village *"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/streetInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Street Name" />
+
+        <!-- Pincode -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pincode *"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/pincodeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Pincode"
+            android:inputType="number"
+            android:maxLength="6"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <!-- City -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City *"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/cityInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter City Name" />
+
+        <!-- District -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="District *"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/districtInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter District Name" />
+
+        <!-- State -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="State *"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spinner_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginTop="8dp" />
+
+        <!-- Landmark (Optional) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Landmark (Optional)"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/landmarkInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Landmark" />
+
+        <!-- Country -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country *"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spinner_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginTop="8dp" />
+
+        <!-- Proceed Button -->
+
+        <Button
+            android:id="@+id/returnToOrderSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to OrderSummary"
+            android:background="@drawable/button_buy_now"
+            app:backgroundTint="@null"
+            android:textColor="#fff"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/proceedToCheckoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to OrderSummary"
+            android:background="@drawable/button_buy_now"
+            app:backgroundTint="@null"
+            android:textColor="#fff"
+            android:layout_marginTop="50dp"
+            android:visibility="visible"/>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
